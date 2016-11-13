@@ -1,0 +1,225 @@
+@import url(reset.css);
+html, body, .wrap {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+@-webkit-keyframes move {
+  0% {
+    -webkit-transform: translate3d(-100%, 100%, 0); }
+  70% {
+    -webkit-transform: translate3d(-50%, 50%, 0); }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0); } }
+@-webkit-keyframes upanddown {
+  0% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0) scale(1); }
+  50% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 20px, 0) scale(0.8); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0) scale(1); } }
+.wrap {
+  position: relative; }
+
+.box {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: none; }
+
+.b1 {
+  display: block;
+  background: url(../img/a2.png) no-repeat left bottom;
+  background-size: 100% 100px;
+  padding-top: 10%; }
+  .b1 .title {
+    margin: 0 auto;
+    width: 200px;
+    height: 80px;
+    background: url(../img/index_t.jpg) no-repeat;
+    background-size: contain;
+    position: relative; }
+    .b1 .title > img {
+      width: 25%;
+      position: absolute;
+      top: 60%;
+      right: 20%; }
+  .b1 .girl {
+    width: 360px;
+    margin: 0 auto;
+    text-align: center;
+    left: 50%;
+    top: 160px;
+    margin-left: -180px;
+    position: absolute;
+    -webkit-animation: move .6s ease-in; }
+    .b1 .girl img {
+      width: 50%; }
+
+.b2 {
+  background: url(../img/wxbot.jpg) no-repeat left bottom;
+  background-size: 100%; }
+  .b2 .head {
+    width: 100%;
+    height: 40px;
+    background: url(../img/wxtitle.jpg) no-repeat left top;
+    background-size: 100%; }
+  .b2 p {
+    width: 100%;
+    height: 100px;
+    padding: 0 10px; }
+    .b2 p img {
+      width: 300px;
+      display: block; }
+
+.b3 {
+  text-align: center; }
+  .b3 > img {
+    width: 80%;
+    padding-top: 20%; }
+  .b3 p {
+    width: 100%;
+    padding-top: 30px;
+    text-align: center; }
+    .b3 p img {
+      width: 90%; }
+
+.b4 > img, .b5 > img, .b6 > img {
+  width: 100%;
+  height: 350px; }
+.b4 p, .b5 p, .b6 p {
+  width: 100%;
+  text-align: center; }
+  .b4 p img, .b5 p img, .b6 p img {
+    padding-top: 10px;
+    width: 90%; }
+
+.b6 > img {
+  width: 100%;
+  height: 220px; }
+
+.b7 {
+  padding-top: 10%; }
+  .b7 .title {
+    margin: 0 auto;
+    width: 200px;
+    height: 80px;
+    position: relative; }
+    .b7 .title > img {
+      width: 25%;
+      position: absolute;
+      top: 60%;
+      right: 20%; }
+  .b7 .tip {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 30px; }
+    .b7 .tip img {
+      width: 100%; }
+  .b7 .stop {
+    padding-top: 20px;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center; }
+    .b7 .stop img {
+      width: 70%; }
+
+.b8 {
+  background-color: darkblue;
+  background: url(../img/house.png) no-repeat left bottom;
+  background-size: contain; }
+  .b8 .talk {
+    width: 100%;
+    text-align: center; }
+    .b8 .talk img {
+      padding-top: 10px;
+      width: 90%; }
+  .b8 .btn {
+    position: relative;
+    width: 75px;
+    height: 75px;
+    margin: 40px auto; }
+    .b8 .btn > img {
+      position: absolute;
+      width: 100%; }
+      .b8 .btn > img:nth-child(2) {
+        top: 30px;
+        left: 20px;
+        width: 60%; }
+
+.b9 {
+  background-color: darkgreen;
+  text-align: center; }
+  .b9 .car {
+    width: 100%;
+    position: relative;
+    text-align: right;
+    padding-right: 10%; }
+    .b9 .car img {
+      padding-top: 10px;
+      width: 50%; }
+    .b9 .car .back {
+      position: absolute;
+      width: 60px;
+      left: 10%;
+      top: 20%; }
+  .b9 .map {
+    margin: 30px auto;
+    width: 260px;
+    height: 300px;
+    position: relative; }
+    .b9 .map canvas {
+      position: absolute;
+      top: 0;
+      left: 0; }
+    .b9 .map .che {
+      position: absolute;
+      z-index: 88; }
+    .b9 .map .c1 {
+      top: -64px;
+      left: 17px; }
+    .b9 .map .c2 {
+      -webkit-transform: rotate(90deg) scale(0.3);
+      top: -35px;
+      right: -30px; }
+    .b9 .map .c3 {
+      -webkit-transform: rotate(-90deg) scale(0.3);
+      bottom: 10px;
+      left: -40px; }
+    .b9 .map .c4 {
+      -webkit-transform: rotate(90deg) scale(0.3);
+      bottom: 5px;
+      right: -30px; }
+    .b9 .map .c5 {
+      -webkit-transform: rotate(-180deg) scale(0.3);
+      bottom: -63px;
+      left: 12px; }
+  .b9 .che {
+    -webkit-transform: scale(0.3); }
+
+#canvas {
+  background: url(../img/map.jpg);
+  background-size: 100%; }
+
+.next {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  margin-left: -20px;
+  display: none; }
+  .next > img {
+    width: 40px;
+    -webkit-animation: upanddown 1s infinite; }
+
+.pos {
+  width: 200px;
+  height: 210px;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  margin-left: -100px; }
+  .pos img {
+    width: 100%; }
